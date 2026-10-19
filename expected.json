@@ -1,0 +1,717 @@
+[
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "4",
+   "3"
+  ],
+  "expected": "Solving for the items in the system: arrival rate 4 x time in the system 3 = 12.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "12",
+   "",
+   "3"
+  ],
+  "expected": "Solving for the arrival rate: items in the system 12 / time in the system 3 = 4.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "12",
+   "4",
+   ""
+  ],
+  "expected": "Solving for the time in the system: items in the system 12 / arrival rate 4 = 3.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "2.5",
+   "0.4"
+  ],
+  "expected": "Solving for the items in the system: arrival rate 2.5 x time in the system 0.4 = 1.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "7",
+   "",
+   "3"
+  ],
+  "expected": "Solving for the arrival rate: items in the system 7 / time in the system 3 = 2.33. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "10",
+   "3",
+   ""
+  ],
+  "expected": "Solving for the time in the system: items in the system 10 / arrival rate 3 = 3.33. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "0.125",
+   "8"
+  ],
+  "expected": "Solving for the items in the system: arrival rate 0.125 x time in the system 8 = 1.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "1",
+   "",
+   "1"
+  ],
+  "expected": "Solving for the arrival rate: items in the system 1 / time in the system 1 = 1.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "1000000",
+   "1000000"
+  ],
+  "expected": "Solving for the items in the system: arrival rate 1000000 x time in the system 1000000 = 1000000000000.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "0.001",
+   "",
+   "1000000"
+  ],
+  "expected": "Solving for the arrival rate: items in the system 0.001 / time in the system 1000000 = 0.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   " 6 ",
+   " 2 ",
+   " "
+  ],
+  "expected": "Solving for the time in the system: items in the system 6 / arrival rate 2 = 3.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "007",
+   "3.50"
+  ],
+  "expected": "Solving for the items in the system: arrival rate 7 x time in the system 3.5 = 24.50. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "5",
+   "",
+   "0.3"
+  ],
+  "expected": "Solving for the arrival rate: items in the system 5 / time in the system 0.3 = 16.67. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "100",
+   "0.5",
+   ""
+  ],
+  "expected": "Solving for the time in the system: items in the system 100 / arrival rate 0.5 = 200.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "33.333",
+   "3"
+  ],
+  "expected": "Solving for the items in the system: arrival rate 33.333 x time in the system 3 = 100.00. This is Little's law, L = rate x time, applied to your two numbers."
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "",
+   "3"
+  ],
+  "expected": "ERR:leave exactly one of the three boxes blank and fill the other two"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "1",
+   "2",
+   "3"
+  ],
+  "expected": "ERR:leave exactly one of the three boxes blank and fill the other two"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "",
+   ""
+  ],
+  "expected": "ERR:leave exactly one of the three boxes blank and fill the other two"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "0",
+   "4",
+   ""
+  ],
+  "expected": "ERR:each filled box must be a number above 0, up to 1000000, with at most 3 decimals"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "-4",
+   "3"
+  ],
+  "expected": "ERR:each filled box must be a number above 0, up to 1000000, with at most 3 decimals"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "x",
+   "4",
+   ""
+  ],
+  "expected": "ERR:each filled box must be a number above 0, up to 1000000, with at most 3 decimals"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "1.2345",
+   "3"
+  ],
+  "expected": "ERR:each filled box must be a number above 0, up to 1000000, with at most 3 decimals"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "1000001",
+   "",
+   "3"
+  ],
+  "expected": "ERR:each filled box must be a number above 0, up to 1000000, with at most 3 decimals"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "",
+   "4",
+   "0"
+  ],
+  "expected": "ERR:each filled box must be a number above 0, up to 1000000, with at most 3 decimals"
+ },
+ {
+  "fn": "lawTruth",
+  "args": [
+   "1e3",
+   "4",
+   ""
+  ],
+  "expected": "ERR:each filled box must be a number above 0, up to 1000000, with at most 3 decimals"
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "8",
+   "10",
+   "50",
+   "3"
+  ],
+  "expected": "From a backlog of 50, service (10 per hour) beats arrivals (8 per hour), so the backlog shrinks by 2.00 per hour and is 44.00 at hour 3. It clears at hour 25.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "12",
+   "10",
+   "50",
+   "3"
+  ],
+  "expected": "From a backlog of 50, arrivals (12 per hour) beat service (10 per hour), so the backlog grows by 2.00 per hour and is 56.00 at hour 3. It never clears."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "10",
+   "10",
+   "50",
+   "3"
+  ],
+  "expected": "From a backlog of 50, arrivals and service are both 10 per hour, so the backlog stays at 50 and never clears."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "10",
+   "10",
+   "0",
+   "3"
+  ],
+  "expected": "From a backlog of 0, arrivals and service are both 10 per hour, so nothing queues and the backlog stays at 0."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "5",
+   "10",
+   "0",
+   "3"
+  ],
+  "expected": "From a backlog of 0, service (10 per hour) beats arrivals (5 per hour) and nothing is waiting, so the backlog stays at 0."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "8",
+   "10",
+   "50",
+   "100"
+  ],
+  "expected": "From a backlog of 50, service (10 per hour) beats arrivals (8 per hour), so the backlog shrinks by 2.00 per hour and is 0.00 at hour 100. It clears at hour 25.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "8",
+   "10",
+   "50",
+   "0"
+  ],
+  "expected": "From a backlog of 50, service (10 per hour) beats arrivals (8 per hour), so the backlog shrinks by 2.00 per hour and is 50.00 at hour 0. It clears at hour 25.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "0",
+   "10",
+   "20",
+   "1"
+  ],
+  "expected": "From a backlog of 20, service (10 per hour) beats arrivals (0 per hour), so the backlog shrinks by 10.00 per hour and is 10.00 at hour 1. It clears at hour 2.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "0",
+   "10",
+   "0",
+   "0"
+  ],
+  "expected": "From a backlog of 0, service (10 per hour) beats arrivals (0 per hour) and nothing is waiting, so the backlog stays at 0."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "9.5",
+   "10",
+   "1",
+   "0.5"
+  ],
+  "expected": "From a backlog of 1, service (10 per hour) beats arrivals (9.5 per hour), so the backlog shrinks by 0.50 per hour and is 0.75 at hour 0.5. It clears at hour 2.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "2.5",
+   "4",
+   "7",
+   "2"
+  ],
+  "expected": "From a backlog of 7, service (4 per hour) beats arrivals (2.5 per hour), so the backlog shrinks by 1.50 per hour and is 4.00 at hour 2. It clears at hour 4.67."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "7",
+   "9",
+   "10",
+   "5"
+  ],
+  "expected": "From a backlog of 10, service (9 per hour) beats arrivals (7 per hour), so the backlog shrinks by 2.00 per hour and is 0.00 at hour 5. It clears at hour 5.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "7",
+   "9",
+   "10",
+   "4"
+  ],
+  "expected": "From a backlog of 10, service (9 per hour) beats arrivals (7 per hour), so the backlog shrinks by 2.00 per hour and is 2.00 at hour 4. It clears at hour 5.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "7",
+   "9",
+   "10",
+   "6"
+  ],
+  "expected": "From a backlog of 10, service (9 per hour) beats arrivals (7 per hour), so the backlog shrinks by 2.00 per hour and is 0.00 at hour 6. It clears at hour 5.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "10.001",
+   "10",
+   "0",
+   "1000"
+  ],
+  "expected": "From a backlog of 0, arrivals (10.001 per hour) beat service (10 per hour), so the backlog grows by 0.00 per hour and is 1.00 at hour 1000. It never clears."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "1000000",
+   "1",
+   "1000000",
+   "1000000"
+  ],
+  "expected": "From a backlog of 1000000, arrivals (1000000 per hour) beat service (1 per hour), so the backlog grows by 999999.00 per hour and is 1000000000000.00 at hour 1000000. It never clears."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "3",
+   "7",
+   "1",
+   "1"
+  ],
+  "expected": "From a backlog of 1, service (7 per hour) beats arrivals (3 per hour), so the backlog shrinks by 4.00 per hour and is 0.00 at hour 1. It clears at hour 0.25."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   " 8 ",
+   " 10 ",
+   " 50 ",
+   " 3 "
+  ],
+  "expected": "From a backlog of 50, service (10 per hour) beats arrivals (8 per hour), so the backlog shrinks by 2.00 per hour and is 44.00 at hour 3. It clears at hour 25.00."
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "8",
+   "0",
+   "50",
+   "3"
+  ],
+  "expected": "ERR:the service rate must be above 0"
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "x",
+   "10",
+   "50",
+   "3"
+  ],
+  "expected": "ERR:each entry must be a number from 0 to 1000000 with at most 3 decimals"
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "8",
+   "10",
+   "",
+   "3"
+  ],
+  "expected": "ERR:each entry must be a number from 0 to 1000000 with at most 3 decimals"
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "8",
+   "10",
+   "50",
+   "-1"
+  ],
+  "expected": "ERR:each entry must be a number from 0 to 1000000 with at most 3 decimals"
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "8",
+   "10",
+   "50",
+   "1.5555"
+  ],
+  "expected": "ERR:each entry must be a number from 0 to 1000000 with at most 3 decimals"
+ },
+ {
+  "fn": "drainTruth",
+  "args": [
+   "1000001",
+   "10",
+   "50",
+   "3"
+  ],
+  "expected": "ERR:each entry must be a number from 0 to 1000000 with at most 3 decimals"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "8",
+   "20"
+  ],
+  "expected": "A batch of 8 takes 26.00 min (3.25 min per item, 18.46 items per hour). No batch size can beat 30.00 items per hour. The smallest batch that reaches 20 items per hour is 10, which gives 20.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "1",
+   "20"
+  ],
+  "expected": "A batch of 1 takes 12.00 min (12.00 min per item, 5.00 items per hour). No batch size can beat 30.00 items per hour. The smallest batch that reaches 20 items per hour is 10, which gives 20.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "100",
+   "20"
+  ],
+  "expected": "A batch of 100 takes 210.00 min (2.10 min per item, 28.57 items per hour). No batch size can beat 30.00 items per hour. The smallest batch that reaches 20 items per hour is 10, which gives 20.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "0",
+   "2",
+   "5",
+   "20"
+  ],
+  "expected": "A batch of 5 takes 10.00 min (2.00 min per item, 30.00 items per hour). No batch size can beat 30.00 items per hour. The smallest batch that reaches 20 items per hour is 1, which gives 30.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "0",
+   "2",
+   "5",
+   "30"
+  ],
+  "expected": "A batch of 5 takes 10.00 min (2.00 min per item, 30.00 items per hour). No batch size can beat 30.00 items per hour. A target of 30 items per hour cannot be reached at any batch size."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "0",
+   "2",
+   "5",
+   "31"
+  ],
+  "expected": "A batch of 5 takes 10.00 min (2.00 min per item, 30.00 items per hour). No batch size can beat 30.00 items per hour. A target of 31 items per hour cannot be reached at any batch size."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "8",
+   "30"
+  ],
+  "expected": "A batch of 8 takes 26.00 min (3.25 min per item, 18.46 items per hour). No batch size can beat 30.00 items per hour. A target of 30 items per hour cannot be reached at any batch size."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "8",
+   "29.9"
+  ],
+  "expected": "A batch of 8 takes 26.00 min (3.25 min per item, 18.46 items per hour). No batch size can beat 30.00 items per hour. The smallest batch that reaches 29.9 items per hour is 1495, which gives 29.90 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "15",
+   "0.5",
+   "50",
+   "100"
+  ],
+  "expected": "A batch of 50 takes 40.00 min (0.80 min per item, 75.00 items per hour). No batch size can beat 120.00 items per hour. The smallest batch that reaches 100 items per hour is 150, which gives 100.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "15",
+   "0.5",
+   "50",
+   "119"
+  ],
+  "expected": "A batch of 50 takes 40.00 min (0.80 min per item, 75.00 items per hour). No batch size can beat 120.00 items per hour. The smallest batch that reaches 119 items per hour is 3570, which gives 119.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "15",
+   "0.5",
+   "50",
+   "120"
+  ],
+  "expected": "A batch of 50 takes 40.00 min (0.80 min per item, 75.00 items per hour). No batch size can beat 120.00 items per hour. A target of 120 items per hour cannot be reached at any batch size."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "5",
+   "1",
+   "1",
+   "1"
+  ],
+  "expected": "A batch of 1 takes 6.00 min (6.00 min per item, 10.00 items per hour). No batch size can beat 60.00 items per hour. The smallest batch that reaches 1 items per hour is 1, which gives 10.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "5",
+   "1",
+   "100000",
+   "59"
+  ],
+  "expected": "A batch of 100000 takes 100005.00 min (1.00 min per item, 60.00 items per hour). No batch size can beat 60.00 items per hour. The smallest batch that reaches 59 items per hour is 295, which gives 59.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "0.5",
+   "0.25",
+   "7",
+   "200"
+  ],
+  "expected": "A batch of 7 takes 2.25 min (0.32 min per item, 186.67 items per hour). No batch size can beat 240.00 items per hour. The smallest batch that reaches 200 items per hour is 10, which gives 200.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "60",
+   "1",
+   "10",
+   "30"
+  ],
+  "expected": "A batch of 10 takes 70.00 min (7.00 min per item, 8.57 items per hour). No batch size can beat 60.00 items per hour. The smallest batch that reaches 30 items per hour is 60, which gives 30.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "60",
+   "1",
+   "10",
+   "0.5"
+  ],
+  "expected": "A batch of 10 takes 70.00 min (7.00 min per item, 8.57 items per hour). No batch size can beat 60.00 items per hour. The smallest batch that reaches 0.5 items per hour is 1, which gives 0.98 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   " 10 ",
+   " 2 ",
+   " 8 ",
+   " 20 "
+  ],
+  "expected": "A batch of 8 takes 26.00 min (3.25 min per item, 18.46 items per hour). No batch size can beat 30.00 items per hour. The smallest batch that reaches 20 items per hour is 10, which gives 20.00 items per hour."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "x",
+   "2",
+   "8",
+   "20"
+  ],
+  "expected": "ERR:each entry must be a number from 0 to 1000000 with at most 3 decimals"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "0",
+   "8",
+   "20"
+  ],
+  "expected": "ERR:the time per item must be above 0"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "0",
+   "20"
+  ],
+  "expected": "ERR:the batch size must be a whole number from 1 to 100000"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "100001",
+   "20"
+  ],
+  "expected": "ERR:the batch size must be a whole number from 1 to 100000"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "2.5",
+   "20"
+  ],
+  "expected": "ERR:the batch size must be a whole number from 1 to 100000"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "8",
+   "0"
+  ],
+  "expected": "ERR:the target must be above 0"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "10",
+   "2",
+   "8",
+   ""
+  ],
+  "expected": "ERR:each entry must be a number from 0 to 1000000 with at most 3 decimals"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   "",
+   "2",
+   "8",
+   "20"
+  ],
+  "expected": "ERR:each entry must be a number from 0 to 1000000 with at most 3 decimals"
+ }
+]
