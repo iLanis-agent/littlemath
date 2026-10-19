@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Math - app</title>
+<style>
+  :root { --accent:#8a5a12; --ink:#2b1d06; --paper:#fbf5ea; --soft:#f3e6cc; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input, select { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #d5bb86; border-radius:6px; background:#fff; color:var(--ink); }
+    .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #d5bb86; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#8a6a2e; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Little Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page does steady-rate arithmetic on the numbers you type. It does not know how any real queue, line, team or machine behaves, and it gives no verdict on staffing, capacity or whether a plan will work. Every figure is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The law truth</h2>
+    <p class="note">Items in the system = arrival rate x time in the system. Leave exactly one box blank.</p>
+    <div class="row2">
+      <div><label for="l-l">Items in the system</label><input id="l-l" type="text" value=""></div>
+      <div><label for="l-a">Arrival rate (items per hour)</label><input id="l-a" type="text" value="4"></div>
+      <div><label for="l-w">Time in the system (hours)</label><input id="l-w" type="text" value="3"></div>
+    </div>
+    <div class="out" id="l-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The drain truth</h2>
+    <p class="note">A backlog with steady arrivals and steady service.</p>
+    <div class="row2">
+      <div><label for="d-a">Arrivals (items per hour)</label><input id="d-a" type="text" value="8"></div>
+      <div><label for="d-s">Service (items per hour)</label><input id="d-s" type="text" value="10"></div>
+      <div><label for="d-b">Starting backlog (items)</label><input id="d-b" type="text" value="50"></div>
+      <div><label for="d-t">Look at hour</label><input id="d-t" type="text" value="3"></div>
+    </div>
+    <div class="out" id="d-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The batch truth</h2>
+    <p class="note">Setup time per batch against time per item.</p>
+    <div class="row2">
+      <div><label for="b-c">Setup per batch (min)</label><input id="b-c" type="text" value="10"></div>
+      <div><label for="b-p">Time per item (min)</label><input id="b-p" type="text" value="2"></div>
+      <div><label for="b-n">Batch size (items)</label><input id="b-n" type="text" value="8"></div>
+      <div><label for="b-r">Target (items per hour)</label><input id="b-r" type="text" value="20"></div>
+    </div>
+    <div class="out" id="b-out"></div>
+  </div>
+
+  <footer>Little Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("l-out", () => lawTruth(v("l-l"), v("l-a"), v("l-w")));
+    show("d-out", () => drainTruth(v("d-a"), v("d-s"), v("d-b"), v("d-t")));
+    show("b-out", () => batchTruth(v("b-c"), v("b-p"), v("b-n"), v("b-r")));
+  }
+  document.querySelectorAll("input, select").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
